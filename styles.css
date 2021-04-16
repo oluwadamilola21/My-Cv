@@ -71,7 +71,7 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-    .edu {
-        display: inline;
+    * {
+        max-width: 100%;
     }
 }
