@@ -1,30 +1,34 @@
-body {
+body html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .wrapper {
-}
-.container {
     display: flex;
-    justify-content: space-between;
-    max-width: 100%;
+    justify-content: space-around;
+}
+.container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-left: 1em;
+    background: saddlebrown;
+    text-align: center;
+    padding: 2em;
     
 }
 
-.container img {
+.container-1 img {
     width: 120px;
     height: 150px;
     margin: 8px;
     border-radius: 10%;
-    margin-left: 10%;
 }
 
-.profile {
-    margin: auto;
+.container-2 {
+    margin-left: 1em;
 }
-
 .profile p {
     color: saddlebrown
 }
@@ -33,8 +37,9 @@ section{
 }
 
 h1 {
+    text-align: center;
     color: saddlebrown;
-    margin: auto;
+    margin-bottom: 2em;
 }
 
 a {
@@ -48,13 +53,25 @@ a {
 }
 h3 {
     background: saddlebrown;
+    opacity: 0.8;
     color: #ffffff;
-    padding: 8px;
+    padding: 5px;
     text-transform: uppercase;
-    border-radius: 10px;
     text-align: center;
 }
 
-h4 {
-    text-transform: uppercase;
+
+.edu {
+    display: flex;
+    
+}
+
+.date {
+    margin-left: 20%;
+}
+
+@media screen and (max-width: 768px) {
+    .edu {
+        display: inline;
+    }
 }
